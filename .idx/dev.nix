@@ -8,6 +8,7 @@
     pkgs.nodejs_22
     pkgs.yarn
     pkgs.bun
+    pkgs.python3
   ];
   # Sets environment variables in the workspace
   env = { };
@@ -18,6 +19,15 @@
       "vscodevim.vim"
       "svelte.svelte-vscode"
     ];
+    previews = {
+      enable = true;
+      previews = {
+        web = {
+          command = [ "python3" "-m" "http.server" "$PORT" "--bind" "0.0.0.0" ];
+          manager = "web";
+        };
+      };
+    };
     workspace = {
       # Runs when a workspace is first created with this `dev.nix` file
       onCreate = {
