@@ -1,28 +1,165 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Maracatu Tech</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maracatu Tech | O Futuro se Encontra com a Tradição</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
-  <header>
-    <h1>Maracatu Tech</h1>
-  </header>
+    <div class="noise"></div>
+    
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <i data-lucide="zap" class="icon-logo"></i>
+                <span>Maracatu Tech</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#features">Vantagens</a></li>
+                <li><a href="#tickets" class="btn-primary">Ingressos</a></li>
+            </ul>
+            <button class="mobile-menu-btn">
+                <i data-lucide="menu"></i>
+            </button>
+        </nav>
+    </header>
 
-  <main>
-    <section id="hero">
-      <h2>O maior evento de tecnologia do Nordeste!</h2>
-      <p>Conecte-se, aprenda e inove.</p>
-      <button>Garanta sua vaga!</button>
-    </section>
-  </main>
+    <main>
+        <section id="home" class="hero">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <span class="badge">O Maior Evento de Tech do Nordeste</span>
+                    <h1>Onde a <span class="gradient-text">Tradição</span> Impulsiona a <span class="gradient-text">Inovação</span></h1>
+                    <p>Junte-se a milhares de desenvolvedores, designers e empreendedores em uma experiência única que celebra a cultura pernambucana e o futuro da tecnologia.</p>
+                    <div class="hero-btns">
+                        <a href="#tickets" class="btn-primary lg">Garantir minha vaga</a>
+                        <a href="#about" class="btn-secondary lg">Saiba mais</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="floating-icons">
+                        <i data-lucide="code" class="float-icon fi-1"></i>
+                        <i data-lucide="cpu" class="float-icon fi-2"></i>
+                        <i data-lucide="globe" class="float-icon fi-3"></i>
+                        <i data-lucide="rocket" class="float-icon fi-4"></i>
+                    </div>
+                    <div class="main-visual-icon">
+                        <i data-lucide="layers" class="hero-main-icon"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-  <footer>
-    <p>&copy; 2024 Maracatu Tech. Todos os direitos reservados.</p>
-  </footer>
+        <section id="features" class="features">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Por que participar?</h2>
+                    <p>Uma imersão completa no ecossistema de tecnologia com o tempero que só o Recife tem.</p>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon-wrapper">
+                            <i data-lucide="users"></i>
+                        </div>
+                        <h3>Networking</h3>
+                        <p>Conecte-se com líderes do mercado nacional e internacional em um ambiente descontraído.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon-wrapper">
+                            <i data-lucide="lightbulb"></i>
+                        </div>
+                        <h3>Inovação</h3>
+                        <p>Descubra as tendências de IA, Web3, Cloud e Desenvolvimento que estão moldando o amanhã.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon-wrapper">
+                            <i data-lucide="award"></i>
+                        </div>
+                        <h3>Conhecimento</h3>
+                        <p>Aprenda com workshops práticos e palestras de quem está na linha de frente da tecnologia.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon-wrapper">
+                            <i data-lucide="music"></i>
+                        </div>
+                        <h3>Cultura</h3>
+                        <p>Vivencie a energia do Maracatu integrada ao ambiente tech em uma festa inesquecível.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-  <script src="script.js"></script>
+        <section id="about" class="about">
+            <div class="container about-wrapper">
+                <div class="about-image">
+                    <div class="abstract-shape">
+                        <i data-lucide="binary" class="about-bg-icon"></i>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h2>O Maracatu Tech não é apenas uma conferência.</h2>
+                    <p>É um manifesto. Acreditamos que a tecnologia deve ser alimentada por nossas raízes. No coração do Porto Digital, reunimos o som do tambor com o clique do código.</p>
+                    <ul class="check-list">
+                        <li><i data-lucide="check-circle"></i> +50 Palestrantes confirmados</li>
+                        <li><i data-lucide="check-circle"></i> 3 Trilhas de conteúdo simultâneo</li>
+                        <li><i data-lucide="check-circle"></i> Área de exposição de startups</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="tickets" class="cta-section">
+            <div class="container">
+                <div class="cta-card">
+                    <h2>Pronto para codar o futuro?</h2>
+                    <p>O primeiro lote já está disponível. Garanta sua entrada com valor promocional.</p>
+                    <a href="#" class="btn-white">Comprar Ingressos Agora</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <div class="logo">
+                    <i data-lucide="zap"></i>
+                    <span>Maracatu Tech</span>
+                </div>
+                <p>O maior evento de tecnologia do Nordeste.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Links Rápidos</h4>
+                <ul>
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#features">Vantagens</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h4>Siga-nos</h4>
+                <div class="social-icons">
+                    <a href="#"><i data-lucide="instagram"></i></a>
+                    <a href="#"><i data-lucide="twitter"></i></a>
+                    <a href="#"><i data-lucide="linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom container">
+            <p>&copy; 2024 Maracatu Tech. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
 </body>
 </html>
